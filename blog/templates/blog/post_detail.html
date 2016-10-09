@@ -7,17 +7,17 @@
                     {{ post.published_date }}
                 </div>
             {% endif %}
-			<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+			<a class="btn btn-success" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
             <h1>{{ post.title }}</h1>
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
    
 	<hr>
-<a class="btn btn-default" href="{% url 'add_comment_to_post' pk=post.pk %}">Add comment</a>
+<a class="btn btn-success" href="{% url 'add_comment_to_post' pk=post.pk %}">Add comment</a>
 {% for comment in post.comments.all %}
     <div class="comment">
         <div class="date">{{ comment.created_date }}</div>
-        <strong>{{ comment.author }}</strong>
+        <strong class="comment">{{ comment.author }}</strong>
         <p>{{ comment.text|linebreaks }}</p>
     </div>
 {% empty %}

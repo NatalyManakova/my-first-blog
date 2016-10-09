@@ -11,14 +11,16 @@
     }
 	
 	.page-header {
-        background-color: #ff9400;
+        background: -moz-linear-gradient(-45deg, #b7deed 0%, #21b4e2 58%, #b7deed 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #b7deed 0%,#21b4e2 58%,#b7deed 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #b7deed 0%,#21b4e2 58%,#b7deed 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         margin-top: 0;
         padding: 20px 20px 20px 40px;
     }
 
     .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
         color: #ffffff;
-        font-size: 36pt;
+        font-size: 42pt;
         text-decoration: none;
     }
 
@@ -32,7 +34,9 @@
 
     .date {
         float: right;
-        color: #828282;
+        color: #008b45;
+		font-weight:bold;
+		font-size:1.25em;
     }
 
     .save {
@@ -54,8 +58,8 @@
         margin-bottom: 70px;
     }
 
-    .post h1 a, .post h1 a:visited {
-        color: #000000;
+    .post h1,.post h1 a, .post h1 a:visited {
+        color: navy;
     }
 	.comment {
     margin: 20px 0px 20px 20px;
